@@ -4,17 +4,34 @@ Part 1: Discussion
 1. What are the three main design advantages that object orientation
    can provide? Explain each concept.
 
+    Answer: 1.Encapsulation: Whenever we create an instance, all the attribute
+    and methods come with it.
+            2.Abstraction: We do not need to know specific info for a method used
+            internally. Hide details from user.
+            3.Polymorphism: Flexibility of types without conditions. 
+
 2. What is a class?
+    Answer: Class is a type of something. Ex: Animal is a class, dog is a instance
+    of Animal class.
 
 3. What is an instance attribute?
+    Answer: Instance attribute is the variable/character/feature
+    attached on that particular instance. 
 
 4. What is a method?
+    Answer: A function defined within a class. 
 
-5. What is an instance in object orientation?
+5. What is an instance in object orientation?:
+    Answer: an instance is an individual occurrence of a class. It is a more
+    concrete thing.
 
 6. How is a class attribute different than an instance attribute?
    Give an example of when you might use each.
-
+    Answer: Class attributes are the same for many instance, but instance attribute
+    is only for that instance use only. 
+    Ex: for the class of Human(), the attribute num_of_eys = 2 should be a class
+    attribute since most people have 2 eyes, but if someone has 3 eyes, then he/she
+    should use a instance attribute to override the class attribute.
 
 """
 
@@ -95,6 +112,7 @@ class Quiz(Exam):
 
 
 """Test One"""
+
 print "Now you are taking an Exam"
 exam = Exam("final_exam")
 exam.add_question("What is the method for adding an element to a set?", ".add()")
@@ -110,6 +128,7 @@ def take_test(exam, student):
 take_test(exam, student)
 
 """Test Two"""
+
 print "Now you are taking the second exam."
 def example():
     new_exam = Exam("second_final")
@@ -122,6 +141,7 @@ def example():
 example()
 
 """Test Three -- Quiz"""
+
 print "Now you are taking a quiz."
 q1 = Quiz("first quiz")
 q1.add_question("How to get the length of a list?", "len()")
